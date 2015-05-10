@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650570A71AFE8FD100458D37 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650570A61AFE8FD100458D37 /* DataManager.swift */; };
+		650570A91AFE901200458D37 /* SwiftJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650570A81AFE901200458D37 /* SwiftJSON.swift */; };
+		650570AB1AFE929D00458D37 /* MoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650570AA1AFE929D00458D37 /* MoodModel.swift */; };
+		650570AD1AFEAAB400458D37 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650570AC1AFEAAB400458D37 /* ImageLoader.swift */; };
+		650570B31AFF9F4D00458D37 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650570B21AFF9F4D00458D37 /* PostViewController.swift */; };
+		650570B51AFFA12A00458D37 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650570B41AFFA12A00458D37 /* CoreLocation.framework */; };
 		651BB81F1AFE4BA000972454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BB81E1AFE4BA000972454 /* AppDelegate.swift */; };
 		651BB8221AFE4BA000972454 /* Today.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 651BB8201AFE4BA000972454 /* Today.xcdatamodeld */; };
-		651BB8241AFE4BA000972454 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BB8231AFE4BA000972454 /* MasterViewController.swift */; };
-		651BB8261AFE4BA000972454 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BB8251AFE4BA000972454 /* DetailViewController.swift */; };
 		651BB8291AFE4BA000972454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651BB8271AFE4BA000972454 /* Main.storyboard */; };
 		651BB82B1AFE4BA000972454 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651BB82A1AFE4BA000972454 /* Images.xcassets */; };
 		651BB82E1AFE4BA000972454 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 651BB82C1AFE4BA000972454 /* LaunchScreen.xib */; };
 		651BB83A1AFE4BA100972454 /* TodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BB8391AFE4BA100972454 /* TodayTests.swift */; };
+		651BB8441AFE526300972454 /* MoodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BB8431AFE526300972454 /* MoodsTableViewController.swift */; };
+		651BB8461AFE552C00972454 /* MoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BB8451AFE552C00972454 /* MoodTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,18 +34,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		650570A61AFE8FD100458D37 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		650570A81AFE901200458D37 /* SwiftJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftJSON.swift; sourceTree = "<group>"; };
+		650570AA1AFE929D00458D37 /* MoodModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodModel.swift; sourceTree = "<group>"; };
+		650570AC1AFEAAB400458D37 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		650570B21AFF9F4D00458D37 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		650570B41AFFA12A00458D37 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		651BB8191AFE4BA000972454 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		651BB81D1AFE4BA000972454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		651BB81E1AFE4BA000972454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		651BB8211AFE4BA000972454 /* Today.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Today.xcdatamodel; sourceTree = "<group>"; };
-		651BB8231AFE4BA000972454 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		651BB8251AFE4BA000972454 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		651BB8281AFE4BA000972454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		651BB82A1AFE4BA000972454 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		651BB82D1AFE4BA000972454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		651BB8331AFE4BA100972454 /* TodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		651BB8381AFE4BA100972454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		651BB8391AFE4BA100972454 /* TodayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTests.swift; sourceTree = "<group>"; };
+		651BB8431AFE526300972454 /* MoodsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodsTableViewController.swift; sourceTree = "<group>"; };
+		651BB8451AFE552C00972454 /* MoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650570B51AFFA12A00458D37 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 		651BB8101AFE4BA000972454 = {
 			isa = PBXGroup;
 			children = (
+				650570B41AFFA12A00458D37 /* CoreLocation.framework */,
 				651BB81B1AFE4BA000972454 /* Today */,
 				651BB8361AFE4BA100972454 /* TodayTests */,
 				651BB81A1AFE4BA000972454 /* Products */,
@@ -82,9 +96,14 @@
 			isa = PBXGroup;
 			children = (
 				651BB81E1AFE4BA000972454 /* AppDelegate.swift */,
-				651BB8231AFE4BA000972454 /* MasterViewController.swift */,
-				651BB8251AFE4BA000972454 /* DetailViewController.swift */,
+				650570B21AFF9F4D00458D37 /* PostViewController.swift */,
 				651BB8271AFE4BA000972454 /* Main.storyboard */,
+				650570AC1AFEAAB400458D37 /* ImageLoader.swift */,
+				651BB8451AFE552C00972454 /* MoodTableViewCell.swift */,
+				651BB8431AFE526300972454 /* MoodsTableViewController.swift */,
+				650570AA1AFE929D00458D37 /* MoodModel.swift */,
+				650570A61AFE8FD100458D37 /* DataManager.swift */,
+				650570A81AFE901200458D37 /* SwiftJSON.swift */,
 				651BB82A1AFE4BA000972454 /* Images.xcassets */,
 				651BB82C1AFE4BA000972454 /* LaunchScreen.xib */,
 				651BB8201AFE4BA000972454 /* Today.xcdatamodeld */,
@@ -218,10 +237,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650570B31AFF9F4D00458D37 /* PostViewController.swift in Sources */,
+				651BB8461AFE552C00972454 /* MoodTableViewCell.swift in Sources */,
+				650570A91AFE901200458D37 /* SwiftJSON.swift in Sources */,
+				650570A71AFE8FD100458D37 /* DataManager.swift in Sources */,
 				651BB81F1AFE4BA000972454 /* AppDelegate.swift in Sources */,
+				651BB8441AFE526300972454 /* MoodsTableViewController.swift in Sources */,
 				651BB8221AFE4BA000972454 /* Today.xcdatamodeld in Sources */,
-				651BB8241AFE4BA000972454 /* MasterViewController.swift in Sources */,
-				651BB8261AFE4BA000972454 /* DetailViewController.swift in Sources */,
+				650570AD1AFEAAB400458D37 /* ImageLoader.swift in Sources */,
+				650570AB1AFE929D00458D37 /* MoodModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +441,7 @@
 				651BB83F1AFE4BA100972454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		651BB8401AFE4BA100972454 /* Build configuration list for PBXNativeTarget "TodayTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +450,7 @@
 				651BB8421AFE4BA100972454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
