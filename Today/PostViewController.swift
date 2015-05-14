@@ -9,16 +9,18 @@
 import UIKit
 import CoreLocation
 import MobileCoreServices
+import CoreMotion
 
 class PostViewController: UIViewController, CLLocationManagerDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     let locationManager = CLLocationManager()
+    let motionManager = CMMotionManager()
     
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var cameraView: UIImageView!
-    
+    @IBOutlet weak var shakingLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,33 @@ class PostViewController: UIViewController, CLLocationManagerDelegate, UINavigat
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
+        if motionManager.accelerometerAvailable {
+            motionManager.accelerometerUpdateInterval = 0.1
+            motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue()) {
+                [weak self] (data: CMAccelerometerData!, error: NSError!) in
+                
+                if (data.acceleration.x > Double(0.05) || data.acceleration.x < Double(-0.05) ||
+                    data.acceleration.y > Double(0.1) || data.acceleration.y < Double(-0.1) ||
+                    data.acceleration.z > Double(0) || data.acceleration.z < Double(-2)) {
+                    
+                    self?.shakingLabel?.text = "You seem stressed. Your hands are shaking."
+                    // Fade in
+                    UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+                        self?.shakingLabel?.alpha = 1.0
+                    }, completion: nil)
+                }
+                else {
+                    // Fade out
+                    UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+                        self?.shakingLabel?.alpha = 0.0
+                        }, completion: nil)
+                    self?.shakingLabel?.text = ""
+                }
+            }
+        }
+        
+        self.shakingLabel?.text = ""
     }
 
     override func didReceiveMemoryWarning() {
@@ -127,5 +156,7 @@ class PostViewController: UIViewController, CLLocationManagerDelegate, UINavigat
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
 
 }

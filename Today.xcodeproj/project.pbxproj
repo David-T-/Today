@@ -13,6 +13,7 @@
 		650570AD1AFEAAB400458D37 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650570AC1AFEAAB400458D37 /* ImageLoader.swift */; };
 		650570B31AFF9F4D00458D37 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650570B21AFF9F4D00458D37 /* PostViewController.swift */; };
 		650570B51AFFA12A00458D37 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650570B41AFFA12A00458D37 /* CoreLocation.framework */; };
+		650570EC1B040EA200458D37 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650570EB1B040EA200458D37 /* CoreMotion.framework */; };
 		651BB81F1AFE4BA000972454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651BB81E1AFE4BA000972454 /* AppDelegate.swift */; };
 		651BB8221AFE4BA000972454 /* Today.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 651BB8201AFE4BA000972454 /* Today.xcdatamodeld */; };
 		651BB8291AFE4BA000972454 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651BB8271AFE4BA000972454 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		650570AC1AFEAAB400458D37 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		650570B21AFF9F4D00458D37 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		650570B41AFFA12A00458D37 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		650570EB1B040EA200458D37 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		651BB8191AFE4BA000972454 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		651BB81D1AFE4BA000972454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		651BB81E1AFE4BA000972454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650570EC1B040EA200458D37 /* CoreMotion.framework in Frameworks */,
 				650570B51AFFA12A00458D37 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +79,7 @@
 		651BB8101AFE4BA000972454 = {
 			isa = PBXGroup;
 			children = (
+				650570EB1B040EA200458D37 /* CoreMotion.framework */,
 				650570B41AFFA12A00458D37 /* CoreLocation.framework */,
 				651BB81B1AFE4BA000972454 /* Today */,
 				651BB8361AFE4BA100972454 /* TodayTests */,

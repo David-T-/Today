@@ -60,14 +60,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="16" y="28" width="296" height="21"/>
-                                </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Hq-ti-J5g">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="12" y="53" width="32" height="32"/>
+                                <variation key="heightClass=regular" ambiguous="YES">
+                                    <rect key="frame" x="300" y="89" width="0.0" height="0.0"/>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LD-lP-9Sa">
@@ -75,8 +72,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="45" y="58" width="296" height="21"/>
+                                <variation key="heightClass=regular" ambiguous="YES">
+                                    <rect key="frame" x="268" y="85" width="64" height="21"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How do you feel today?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJC-lV-eHf">
@@ -91,8 +88,8 @@
                                         <exclude reference="TdM-1c-u66"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="12" y="93" width="300" height="30"/>
+                                <variation key="heightClass=regular" ambiguous="YES">
+                                    <rect key="frame" x="150" y="114" width="300" height="30"/>
                                     <mask key="constraints">
                                         <include reference="TdM-1c-u66"/>
                                     </mask>
@@ -109,9 +106,6 @@
                                 <state key="normal" title="Take a picture">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="12" y="172" width="96" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="takePhoto:" destination="t7b-SW-bcl" eventType="touchUpInside" id="aRJ-mD-hyO"/>
                                 </connections>
@@ -119,8 +113,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nwb-Pz-T1U">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="MTg-7q-NzB"/>
-                                    <constraint firstAttribute="height" constant="240" id="f2t-Bb-vX8"/>
+                                    <constraint firstAttribute="width" constant="200" id="MTg-7q-NzB"/>
+                                    <constraint firstAttribute="height" constant="200" id="f2t-Bb-vX8"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -128,27 +122,37 @@
                                         <exclude reference="f2t-Bb-vX8"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="12" y="210" width="240" height="240"/>
+                                <variation key="heightClass=regular">
                                     <mask key="constraints">
                                         <include reference="MTg-7q-NzB"/>
                                         <include reference="f2t-Bb-vX8"/>
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shaking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnb-HH-TWi">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="269" y="152" width="62" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3Hq-ti-J5g" firstAttribute="top" secondItem="hlA-1f-aSy" secondAttribute="bottom" constant="-4" id="0SE-KF-kSo"/>
+                            <constraint firstItem="Dnb-HH-TWi" firstAttribute="top" secondItem="RJC-lV-eHf" secondAttribute="bottom" constant="8" id="7Te-zM-Gjv"/>
                             <constraint firstAttribute="centerX" secondItem="hlA-1f-aSy" secondAttribute="centerX" id="84q-WC-fsl"/>
                             <constraint firstAttribute="centerX" secondItem="3Hq-ti-J5g" secondAttribute="centerX" id="9zv-Dh-4oo"/>
                             <constraint firstAttribute="centerX" secondItem="hAt-Nj-cyM" secondAttribute="centerX" id="B0s-hs-ZLu"/>
                             <constraint firstItem="nwb-Pz-T1U" firstAttribute="top" secondItem="hAt-Nj-cyM" secondAttribute="bottom" constant="8" id="Px8-H6-Jyq"/>
                             <constraint firstAttribute="centerX" secondItem="3LD-lP-9Sa" secondAttribute="centerX" id="Svh-2O-gjn"/>
                             <constraint firstAttribute="centerX" secondItem="nwb-Pz-T1U" secondAttribute="centerX" id="TXP-aH-juU"/>
-                            <constraint firstItem="hAt-Nj-cyM" firstAttribute="top" secondItem="WER-wx-1qT" secondAttribute="bottom" constant="140" id="Vqr-Bh-hUX"/>
+                            <constraint firstItem="hAt-Nj-cyM" firstAttribute="top" secondItem="WER-wx-1qT" secondAttribute="bottom" constant="180" id="Vqr-Bh-hUX"/>
                             <constraint firstItem="RJC-lV-eHf" firstAttribute="top" secondItem="3LD-lP-9Sa" secondAttribute="bottom" constant="8" id="ejM-kg-bpf"/>
                             <constraint firstAttribute="centerX" secondItem="RJC-lV-eHf" secondAttribute="centerX" id="ln9-5L-IRN"/>
+                            <constraint firstAttribute="centerX" secondItem="Dnb-HH-TWi" secondAttribute="centerX" id="rSN-mg-11n"/>
                             <constraint firstItem="3LD-lP-9Sa" firstAttribute="top" secondItem="3Hq-ti-J5g" secondAttribute="bottom" constant="-4" id="tOo-Qs-7BT"/>
                             <constraint firstItem="hlA-1f-aSy" firstAttribute="top" secondItem="WER-wx-1qT" secondAttribute="bottom" constant="8" id="xvF-ba-Dnx"/>
                         </constraints>
@@ -161,6 +165,7 @@
                                 <exclude reference="G3l-Gq-GqM"/>
                                 <exclude reference="hAt-Nj-cyM"/>
                                 <exclude reference="nwb-Pz-T1U"/>
+                                <exclude reference="Dnb-HH-TWi"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="84q-WC-fsl"/>
@@ -173,6 +178,8 @@
                                 <exclude reference="ln9-5L-IRN"/>
                                 <exclude reference="B0s-hs-ZLu"/>
                                 <exclude reference="Vqr-Bh-hUX"/>
+                                <exclude reference="7Te-zM-Gjv"/>
+                                <exclude reference="rSN-mg-11n"/>
                                 <exclude reference="Px8-H6-Jyq"/>
                                 <exclude reference="TXP-aH-juU"/>
                             </mask>
@@ -186,6 +193,7 @@
                                 <exclude reference="G3l-Gq-GqM"/>
                                 <include reference="hAt-Nj-cyM"/>
                                 <include reference="nwb-Pz-T1U"/>
+                                <include reference="Dnb-HH-TWi"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="84q-WC-fsl"/>
@@ -198,6 +206,8 @@
                                 <include reference="ln9-5L-IRN"/>
                                 <include reference="B0s-hs-ZLu"/>
                                 <include reference="Vqr-Bh-hUX"/>
+                                <include reference="7Te-zM-Gjv"/>
+                                <include reference="rSN-mg-11n"/>
                                 <include reference="Px8-H6-Jyq"/>
                                 <include reference="TXP-aH-juU"/>
                             </mask>
@@ -210,6 +220,7 @@
                     <connections>
                         <outlet property="cameraView" destination="nwb-Pz-T1U" id="j4M-Fc-Lbb"/>
                         <outlet property="cityLabel" destination="hlA-1f-aSy" id="h4g-zu-9jE"/>
+                        <outlet property="shakingLabel" destination="Dnb-HH-TWi" id="81z-Qp-sL2"/>
                         <outlet property="weatherIcon" destination="3Hq-ti-J5g" id="QW9-V8-u7S"/>
                         <outlet property="weatherLabel" destination="3LD-lP-9Sa" id="nF0-nK-f7o"/>
                     </connections>
